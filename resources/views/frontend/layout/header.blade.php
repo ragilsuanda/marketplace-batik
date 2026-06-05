@@ -23,6 +23,7 @@
          ============================================================ -->
 <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container">
+        <!-- Logo Brand (Struktur tag penutup <a> & </div> sudah diperbaiki) -->
         <a class="navbar-brand" href="#">
             <div class="blogo">
                 <div class="bico">
@@ -31,27 +32,39 @@
                 <div class="bname">Ser<span>unai</span></div>
                 <div class="bsub">Rumah Batik</div>
             </div>
-    </div>
-    </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link" href="#category">Layanan</a></li>
-            <li class="nav-item"><a class="nav-link" href="#history">Sejarah</a></li>
-            <li class="nav-item"><a class="nav-link" href="#blog">Artikel</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-section">Hubungi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-section">Masuk</a></li>
-        </ul>
-        <div class="d-flex align-items-center gap-1">
-            <!-- FIX 1: Search button -->
-            <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
-            <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
+        </a>
+
+        <!-- Tombol Toggler Mobile -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+        </button>
+
+        <!-- Menu Navigasi Tengah -->
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="#category">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#history">Sejarah</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Artikel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-section">Hubungi</a></li>
+                <!-- Menu "Masuk" di sini sudah dihapus agar space tengah longgar -->
+            </ul>
+
+            <!-- Bagian Kanan (Masuk, Search, & Order Button) -->
+            <div class="d-flex align-items-center gap-3">
+                <!-- Tombol Masuk dipindah ke sini agar sejajar dengan aksi kanan -->
+                <a href="{{ route('login') }}" class="nav-link text-dark fw-semibold me-2">Masuk</a>
+
+                <!-- Search Button -->
+                <button id="navSearchBtn" title="Search" class="btn btn-link text-dark p-0 border-0 me-1">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- CTA Button (Teks disesuaikan ke konteks fashion batik) -->
+                <a href="#category" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Beli Sekarang</a>
+            </div>
         </div>
-    </div>
     </div>
 </nav>
 

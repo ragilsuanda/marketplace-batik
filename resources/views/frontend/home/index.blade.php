@@ -188,13 +188,13 @@
         </div>
     </section>
     <!-- ============================================================
-                                                                         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
-                                                                         ============================================================ -->
+                                                                                     MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+                                                                                     ============================================================ -->
 
 
     <!-- ============================================================
-                                                                         FIX 4 � MENU DETAIL POPUP MODAL
-                                                                         ============================================================ -->
+                                                                                     FIX 4 � MENU DETAIL POPUP MODAL
+                                                                                     ============================================================ -->
     <div id="menuPop">
         <div class="mpbox">
             <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
@@ -218,40 +218,11 @@
         </div>
     </div>
     <!-- SPECIAL OFFER -->
-    <section id="special">
-        <div class="spbg"></div>
-        <div class="container" style="position:relative;z-index:2;">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="sptag"><i class="fas fa-bolt me-1"></i>Limited Time Offer</div>
-                    <h2 class="sptitle">Get 30% Off<br />Our Signature<br /><span>Burger</span> Meal</h2>
-                    <p class="spdesc">Don't miss our weekend special - grab our award-winning signature burger combo with
-                        loaded fries and a premium shake at an unbeatable price.</p>
-                    <div class="cdwrap">
-                        <div class="cditem"><span class="cdnum" id="cdH">08</span><span
-                                class="cdlbl">Hours</span></div>
-                        <div class="cditem"><span class="cdnum" id="cdM">45</span><span
-                                class="cdlbl">Minutes</span></div>
-                        <div class="cditem"><span class="cdnum" id="cdS">30</span><span
-                                class="cdlbl">Seconds</span></div>
-                    </div>
-                    <a href="#menu" class="btn-red"><i class="fas fa-shopping-cart"></i>Grab the Deal</a>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="spimgw">
-                        <div class="spglow"></div>
-                        <div class="sppbdg"><span class="old">$24.99</span><span class="np">$17.49</span></div>
-                        <img src="img/off-img.jpg" alt="Special Burger" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- ============================================================
-                                                                         GALLERY � FIX 7 (click opens detail popup)
-                                                                         ============================================================ -->
+                                                                                     GALLERY � FIX 7 (click opens detail popup)
+                                                                                     ============================================================ -->
 
     <!-- FIX 7 � GALLERY POPUP -->
     <div id="galPop">
@@ -271,8 +242,8 @@
 
 
     <!-- ============================================================
-                                                                         HISTORY � FIX 8 (alternating left/right text)
-                                                                         ============================================================ -->
+                                                                                     HISTORY � FIX 8 (alternating left/right text)
+                                                                                     ============================================================ -->
     <section id="history">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -359,173 +330,6 @@
         </div>
     </section>
 
-    <!-- HOURS -->
-    <section id="hours">
-        <div class="hrsbg"></div>
-        <div class="container" style="position:relative;z-index:2;">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="slbl" style="color:#a5d6bc;">Opening Hours</span>
-                <h2 class="stitle" style="color:#fff;">We're Open <span style="color:var(--secondary);">For You</span>
-                </h2>
-                <div class="sline"></div>
-            </div>
-            <div class="row g-4 align-items-start">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="hrscard">
-                        <div class="hrsrow">
-                            <span class="hrsday"><i class="fas fa-calendar-day me-2"
-                                    style="color:var(--secondary);"></i>Monday - Tuesday</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="hdot off"></div>
-                                <span class="hrstime" style="color:#ff6b6b;">Closed</span>
-                            </div>
-                        </div>
-                        <div class="hrsrow">
-                            <span class="hrsday"><i class="fas fa-calendar-day me-2"
-                                    style="color:var(--secondary);"></i>Wednesday - Thursday</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="hdot on"></div>
-                                <span class="hrstime">09:00 AM - 10:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="hrsrow">
-                            <span class="hrsday"><i class="fas fa-calendar-day me-2"
-                                    style="color:var(--secondary);"></i>Friday</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="hdot on"></div>
-                                <span class="hrstime">09:00 AM - 11:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="hrsrow">
-                            <span class="hrsday"><i class="fas fa-calendar-day me-2"
-                                    style="color:var(--secondary);"></i>Saturday</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="hdot on"></div>
-                                <span class="hrstime">10:00 AM - 11:30 PM</span>
-                            </div>
-                        </div>
-                        <div class="hrsrow">
-                            <span class="hrsday"><i class="fas fa-calendar-day me-2"
-                                    style="color:var(--secondary);"></i>Sunday</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="hdot on"></div>
-                                <span class="hrstime">11:00 AM - 09:00 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3" data-aos="zoom-in">
-                    <div class="hrscta">
-                        <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
-                        <h4>Order Online</h4>
-                        <p>Get hot food delivered in 25 minutes</p>
-                        <a href="#menu" class="btnw">Order Now ?</a>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-left">
-                    <div class="hrscard">
-                        <h5
-                            style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;">
-                            <i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us
-                        </h5>
-                        <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2"
-                                    style="color:var(--secondary);"></i>Address</span><span class="hrstime"
-                                style="font-size:.8rem;">42 Flavor Street, NY</span></div>
-                        <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2"
-                                    style="color:var(--secondary);"></i>Phone</span><span class="hrstime"
-                                style="font-size:.8rem;">+1 (800) 123-4567</span></div>
-                        <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2"
-                                    style="color:var(--secondary);"></i>Email</span><span class="hrstime"
-                                style="font-size:.8rem;">hello@sarabfood.com</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- TESTIMONIALS -->
-
-    {{-- <!-- RESERVATION FORM -->
-      <section id="reservation">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">Book a Table</span>
-               <h2 class="stitle">Make a <span>Reservation</span></h2>
-               <div class="sline"></div>
-               <p class="sdesc mx-auto" style="max-width:480px;">Reserve your table for a memorable dining experience. We recommend booking 24 hours in advance for weekend evenings.</p>
-            </div>
-            <div class="row g-4 align-items-start">
-               <div class="col-lg-4" data-aos="fade-right">
-                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
-                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Contact Info</h4>
-                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">We're happy to help you plan the perfect dining experience.</p>
-                     <div class="d-flex flex-column gap-3">
-                        <div class="d-flex align-items-center gap-3">
-                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
-                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Opening Hours</strong><span style="color:#fff;font-size:.87rem;">Wed - Sun, 9 AM - 11 PM</span></div>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
-                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Call for Booking</strong><span style="color:#fff;font-size:.87rem;">+1 (800) 123-4567</span></div>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
-                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Group Dining</strong><span style="color:#fff;font-size:.87rem;">Special menus for 10+ guests</span></div>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
-                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">42 Flavor Street, NY</span></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-8" data-aos="fade-left">
-                  <div class="fcard">
-                     <div class="row g-3">
-                        <div class="col-sm-6"><label class="flbl">Full Name *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
-                        <div class="col-sm-6"><label class="flbl">Phone Number *</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
-                        <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
-                        <div class="col-sm-6">
-                           <label class="flbl">Number of Guests *</label>
-                           <select class="fctrl">
-                              <option>1 Person</option>
-                              <option>2 People</option>
-                              <option>3 - 4 People</option>
-                              <option>5 - 6 People</option>
-                              <option>7 -10 People</option>
-                              <option>10+ People</option>
-                           </select>
-                        </div>
-                        <div class="col-sm-6"><label class="flbl">Date *</label><input type="date" class="fctrl"/></div>
-                        <div class="col-sm-6">
-                           <label class="flbl">Time *</label>
-                           <select class="fctrl">
-                              <option>09:00 AM</option>
-                              <option>10:00 AM</option>
-                              <option>11:00 AM</option>
-                              <option>12:00 PM</option>
-                              <option>01:00 PM</option>
-                              <option>02:00 PM</option>
-                              <option>06:00 PM</option>
-                              <option>07:00 PM</option>
-                              <option>08:00 PM</option>
-                              <option>09:00 PM</option>
-                              <option>10:00 PM</option>
-                           </select>
-                        </div>
-                        <div class="col-12"><label class="flbl">Special Requests</label><textarea class="fctrl" rows="3" placeholder="Allergies, dietary needs, special occasions..."></textarea></div>
-                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirm Reservation</button></div>
-                     </div>
-                     <div class="sucmsg" id="resOk">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Table reserved! We'll confirm via email shortly.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section> --}}
 
     <!-- BLOG -->
     <section id="blog">
@@ -610,8 +414,8 @@
       </section> --}}
 
     <!-- ============================================================
-                                                                         FIX 6 � CONTACT FORM
-                                                                         ============================================================ -->
+                                                                                     FIX 6 � CONTACT FORM
+                                                                                     ============================================================ -->
     <section id="contact-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
