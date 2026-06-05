@@ -40,11 +40,11 @@
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link" href="#category">Kategori</a></li>
+            <li class="nav-item"><a class="nav-link" href="#category">Layanan</a></li>
             <li class="nav-item"><a class="nav-link" href="#history">Sejarah</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Artikel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">Hubungi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">Masuk</a></li>
         </ul>
         <div class="d-flex align-items-center gap-1">
             <!-- FIX 1: Search button -->
