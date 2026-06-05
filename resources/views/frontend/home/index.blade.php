@@ -11,8 +11,7 @@
             <div class="row align-items-center g-5" style="min-height:88vh;">
                 <div class="col-lg-6">
                     <div class="hbadge">
-                        <div class="hbi"><i class="fas fa-star"></i></div>
-                        <span>#1 Rated Fast Food Restaurant in New York</span>
+
                     </div>
                     <h1 class="htitle">Pesona <span class="hl">Batik Nusantara</h1>
                     <p class="hdesc">Rasakan keindahan mahakarya autentik yang dipadukan dengan bahan premium berkualitas
@@ -189,13 +188,13 @@
         </div>
     </section>
     <!-- ============================================================
-                 MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
-                 ============================================================ -->
+                                 MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+                                 ============================================================ -->
 
 
     <!-- ============================================================
-                 FIX 4 � MENU DETAIL POPUP MODAL
-                 ============================================================ -->
+                                 FIX 4 � MENU DETAIL POPUP MODAL
+                                 ============================================================ -->
     <div id="menuPop">
         <div class="mpbox">
             <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
@@ -251,8 +250,8 @@
 
 
     <!-- ============================================================
-                 GALLERY � FIX 7 (click opens detail popup)
-                 ============================================================ -->
+                                 GALLERY � FIX 7 (click opens detail popup)
+                                 ============================================================ -->
 
     <!-- FIX 7 � GALLERY POPUP -->
     <div id="galPop">
@@ -272,8 +271,8 @@
 
 
     <!-- ============================================================
-                 HISTORY � FIX 8 (alternating left/right text)
-                 ============================================================ -->
+                                 HISTORY � FIX 8 (alternating left/right text)
+                                 ============================================================ -->
     <section id="history">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -606,8 +605,8 @@
       </section> --}}
 
     <!-- ============================================================
-                 FIX 6 � CONTACT FORM
-                 ============================================================ -->
+                                 FIX 6 � CONTACT FORM
+                                 ============================================================ -->
     <section id="contact-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
