@@ -14,7 +14,7 @@
                         <div class="hbi"><i class="fas fa-star"></i></div>
                         <span>#1 Rated Fast Food Restaurant in New York</span>
                     </div>
-                    <h1 class="htitle">jnsdjdnjsd <span class="hl">Batik Nusantara</h1>
+                    <h1 class="htitle">Pesona <span class="hl">Batik Nusantara</h1>
                     <p class="hdesc">Rasakan keindahan mahakarya autentik yang dipadukan dengan bahan premium berkualitas
                         tinggi. Dari motif klasik hingga desain modern - setiap helai kain adalah warisan budaya yang
                         berharga.</p>
@@ -189,13 +189,13 @@
         </div>
     </section>
     <!-- ============================================================
-             MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
-             ============================================================ -->
+                 MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+                 ============================================================ -->
 
 
     <!-- ============================================================
-             FIX 4 � MENU DETAIL POPUP MODAL
-             ============================================================ -->
+                 FIX 4 � MENU DETAIL POPUP MODAL
+                 ============================================================ -->
     <div id="menuPop">
         <div class="mpbox">
             <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
@@ -251,8 +251,8 @@
 
 
     <!-- ============================================================
-             GALLERY � FIX 7 (click opens detail popup)
-             ============================================================ -->
+                 GALLERY � FIX 7 (click opens detail popup)
+                 ============================================================ -->
 
     <!-- FIX 7 � GALLERY POPUP -->
     <div id="galPop">
@@ -272,8 +272,8 @@
 
 
     <!-- ============================================================
-             HISTORY � FIX 8 (alternating left/right text)
-             ============================================================ -->
+                 HISTORY � FIX 8 (alternating left/right text)
+                 ============================================================ -->
     <section id="history">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -427,7 +427,8 @@
                     <div class="hrscard">
                         <h5
                             style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;">
-                            <i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
+                            <i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us
+                        </h5>
                         <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2"
                                     style="color:var(--secondary);"></i>Address</span><span class="hrstime"
                                 style="font-size:.8rem;">42 Flavor Street, NY</span></div>
@@ -605,8 +606,8 @@
       </section> --}}
 
     <!-- ============================================================
-             FIX 6 � CONTACT FORM
-             ============================================================ -->
+                 FIX 6 � CONTACT FORM
+                 ============================================================ -->
     <section id="contact-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
