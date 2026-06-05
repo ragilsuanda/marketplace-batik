@@ -83,30 +83,30 @@
     <section id="category">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <span class="slbl">What We Offer</span>
-                <h2 class="stitle">Browse by <span>Category</span></h2>
+                <span class="slbl">Layanan Kami</span>
+                <h2 class="stitle">Telusuri berdasarkan <span>Kategori</span></h2>
                 <div class="sline"></div>
-                <p class="sdesc mx-auto" style="max-width:480px;">From sizzling burgers to exotic world cuisines - find your
-                    favourite in our menu</p>
+                <p class="sdesc mx-auto" style="max-width:480px;">Dari mahakarya batik tulis klasik hingga kombinasi modern
+                    yang elegan – temukan motif favorit untuk setiap momen berhargamu.</p>
             </div>
             <div class="row g-3 justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
                     <div class="catcard active" data-filter="all">
-                        <img class="catimg" src="img/category/1.jpg" alt="" />
-                        <div class="catnm">All Items</div>
+                        <img class="catimg" src="{{ asset('template/sarab') }}/img/category/1.jpg" alt="" />
+                        <div class="catnm">Batik Tumbuhan</div>
                         <div class="catct">99 items</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
                     <div class="catcard" data-filter="burgers">
-                        <img class="catimg" src="img/category/2.jpg" alt="" />
+                        <img class="catimg" src="{{ asset('template/sarab') }}/img/category/2.jpg" alt="" />
                         <div class="catnm">Burgers</div>
                         <div class="catct">24 items</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
                     <div class="catcard" data-filter="pizza">
-                        <img class="catimg" src="img/category/3.jpg" alt="" />
+                        <img class="catimg" src="{{ asset('template/sarab') }}/img/category/3.jpg" alt="" />
                         <div class="catnm">Pizza</div>
                         <div class="catct">18 items</div>
                     </div>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
                     <div class="catcard" data-filter="wraps">
-                        <img class="catimg" src="img/category/5.jpg" alt="" />
+                        <img class="catimg" src="{{ asset('template/sarab') }}/img/category/5.jpg" alt="" />
                         <div class="catnm">Wraps</div>
                         <div class="catct">12 items</div>
                     </div>
@@ -188,13 +188,13 @@
         </div>
     </section>
     <!-- ============================================================
-                                 MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
-                                 ============================================================ -->
+                                                                         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+                                                                         ============================================================ -->
 
 
     <!-- ============================================================
-                                 FIX 4 � MENU DETAIL POPUP MODAL
-                                 ============================================================ -->
+                                                                         FIX 4 � MENU DETAIL POPUP MODAL
+                                                                         ============================================================ -->
     <div id="menuPop">
         <div class="mpbox">
             <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
@@ -250,8 +250,8 @@
 
 
     <!-- ============================================================
-                                 GALLERY � FIX 7 (click opens detail popup)
-                                 ============================================================ -->
+                                                                         GALLERY � FIX 7 (click opens detail popup)
+                                                                         ============================================================ -->
 
     <!-- FIX 7 � GALLERY POPUP -->
     <div id="galPop">
@@ -271,8 +271,8 @@
 
 
     <!-- ============================================================
-                                 HISTORY � FIX 8 (alternating left/right text)
-                                 ============================================================ -->
+                                                                         HISTORY � FIX 8 (alternating left/right text)
+                                                                         ============================================================ -->
     <section id="history">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -531,55 +531,60 @@
     <section id="blog">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <span class="slbl">News &amp; Updates</span>
-                <h2 class="stitle">Our Latest <span>Blog</span> Posts</h2>
+                <span class="slbl">Wawasan &amp; Artikel</span>
+                <h2 class="stitle">Blog <span>Terbaru</span> Kami</h2>
                 <div class="sline"></div>
             </div>
             <div class="row g-4">
+                <!-- Artikel 1 -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
                     <div class="blcard">
                         <div class="blimg">
-                            <img src="{{ asset('template/sarab') }}/img/blog/1.png" alt="" />
+                            <img src="{{ asset('template/sarab') }}/img/blog/1.png" alt="Mengenal Batik Tulis" />
                             <div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
                         </div>
                         <div class="blbody">
-                            <div class="bltag">Food &amp; Health</div>
-                            <div class="bltit"><a href="#">Healthy Fast Food: A Myth or Beautiful Reality</a></div>
-                            <div class="blmeta"><span><i class="fas fa-user"></i>James Writer</span><span><i
-                                        class="fas fa-comment"></i>24 Comments</span></div>
-                            <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="bltag">Edukasi Budaya</div>
+                            <div class="bltit"><a href="#">Menilik Proses Pembuatan Batik Tulis Autentik yang
+                                    Bernilai Tinggi</a></div>
+                            <div class="blmeta"><span><i class="fas fa-user"></i>Admin Serunai</span><span><i
+                                        class="fas fa-comment"></i>24 Komentar</span></div>
+                            <a href="#" class="blmore">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+                <!-- Artikel 2 -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
                     <div class="blcard">
                         <div class="blimg">
-                            <img src="{{ asset('template/sarab') }}/img/blog/2.png" alt="" />
+                            <img src="{{ asset('template/sarab') }}/img/blog/2.png" alt="Tips Fashion Batik" />
                             <div class="bldatebdg"><span class="bd">28</span><span class="bm">Feb</span></div>
                         </div>
                         <div class="blbody">
-                            <div class="bltag">Food Science</div>
-                            <div class="bltit"><a href="#">Is Fast Food Getting Healthier? Here's What We Found</a>
+                            <div class="bltag">Tren Fashion</div>
+                            <div class="bltit"><a href="#">Tips Padupadan Kain Batik Modern untuk Tampilan Kasual
+                                    Sehari-hari</a>
                             </div>
-                            <div class="blmeta"><span><i class="fas fa-user"></i>Sarah Grain</span><span><i
-                                        class="fas fa-comment"></i>18 Comments</span></div>
-                            <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blmeta"><span><i class="fas fa-user"></i>Siti Lestari</span><span><i
+                                        class="fas fa-comment"></i>18 Komentar</span></div>
+                            <a href="#" class="blmore">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+                <!-- Artikel 3 -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
                     <div class="blcard">
                         <div class="blimg">
-                            <img src="{{ asset('template/sarab') }}/img/blog/3.png" alt="" />
+                            <img src="{{ asset('template/sarab') }}/img/blog/3.png" alt="Sejarah Motif Batik" />
                             <div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
                         </div>
                         <div class="blbody">
-                            <div class="bltag">Recipes</div>
-                            <div class="bltit"><a href="#">Innovative Hot Chickpeas Flake Crackin' Recipe at
-                                    Home</a></div>
-                            <div class="blmeta"><span><i class="fas fa-user"></i>Chef Marcus</span><span><i
-                                        class="fas fa-comment"></i>32 Comments</span></div>
-                            <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="bltag">Filosofi Motif</div>
+                            <div class="bltit"><a href="#">Makna Mendalam di Balik Keindahan Ragam Motif Batik
+                                    Nusantara</a></div>
+                            <div class="blmeta"><span><i class="fas fa-user"></i>Rian Budaya</span><span><i
+                                        class="fas fa-comment"></i>32 Komentar</span></div>
+                            <a href="#" class="blmore">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -605,30 +610,30 @@
       </section> --}}
 
     <!-- ============================================================
-                                 FIX 6 � CONTACT FORM
-                                 ============================================================ -->
+                                                                         FIX 6 � CONTACT FORM
+                                                                         ============================================================ -->
     <section id="contact-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <span class="slbl">Get In Touch</span>
-                <h2 class="stitle">Contact <span>Us</span></h2>
+                <span class="slbl">Hubungi Kami</span>
+                <h2 class="stitle">Kontak <span>Kami</span></h2>
                 <div class="sline"></div>
-                <p class="sdesc mx-auto" style="max-width:480px;">Have a question, feedback, or want to plan a special
-                    event? We'd love to hear from you.</p>
+                <p class="sdesc mx-auto" style="max-width:480px;">Punya pertanyaan mengenai koleksi kami, pesanan khusus
+                    kustom batik, atau kerja sama? Kami siap membantu Anda.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4" data-aos="fade-right">
                     <div class="ctdark">
-                        <h4>Let's Talk</h4>
-                        <p class="ctsub">We typically respond within 2 hours during business hours.</p>
+                        <h4>Mari Berdiskusi</h4>
+                        <p class="ctsub">Kami biasanya merespons dalam waktu 2 jam selama jam operasional kerja.</p>
                         <div class="ctitem">
                             <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="ctinfo"><strong>Address</strong><span>42 Flavor Street, Manhattan,<br />New York,
-                                    NY 10001</span></div>
+                            <div class="ctinfo"><strong>Alamat</strong><span>Jl. Flavor Street No. 42,<br />Jakarta Pusat,
+                                    DKI Jakarta</span></div>
                         </div>
                         <div class="ctitem">
                             <div class="cticon"><i class="fas fa-phone-alt"></i></div>
-                            <div class="ctinfo"><strong>Phone</strong><span>+1 (800) 123-4567</span></div>
+                            <div class="ctinfo"><strong>Telepon</strong><span>+1 (800) 123-4567</span></div>
                         </div>
                         <div class="ctitem">
                             <div class="cticon"><i class="fas fa-envelope"></i></div>
@@ -636,7 +641,8 @@
                         </div>
                         <div class="ctitem">
                             <div class="cticon"><i class="fas fa-clock"></i></div>
-                            <div class="ctinfo"><strong>Working Hours</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
+                            <div class="ctinfo"><strong>Jam Operasional</strong><span>Rabu - Minggu: 09:00 - 23:00</span>
+                            </div>
                         </div>
                         <div class="ctsocrow">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -649,31 +655,31 @@
                 <div class="col-lg-8" data-aos="fade-left">
                     <div class="fcard">
                         <div class="row g-3">
-                            <div class="col-sm-6"><label class="flbl">Your Name *</label><input type="text"
-                                    class="fctrl" placeholder="John Doe" /></div>
-                            <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email"
-                                    class="fctrl" placeholder="you@email.com" /></div>
-                            <div class="col-sm-6"><label class="flbl">Phone Number</label><input type="tel"
-                                    class="fctrl" placeholder="+1 (800) 000-0000" /></div>
+                            <div class="col-sm-6"><label class="flbl">Nama Lengkap *</label><input type="text"
+                                    class="fctrl" placeholder="Budi Santoso" /></div>
+                            <div class="col-sm-6"><label class="flbl">Alamat Email *</label><input type="email"
+                                    class="fctrl" placeholder="budi@email.com" /></div>
+                            <div class="col-sm-6"><label class="flbl">Nomor Telepon / WA</label><input type="tel"
+                                    class="fctrl" placeholder="081234567890" /></div>
                             <div class="col-sm-6">
-                                <label class="flbl">Subject *</label>
+                                <label class="flbl">Subjek *</label>
                                 <select class="fctrl">
-                                    <option>General Inquiry</option>
-                                    <option>Catering &amp; Events</option>
-                                    <option>Feedback</option>
-                                    <option>Partnership</option>
-                                    <option>Media &amp; Press</option>
+                                    <option>Pertanyaan Umum</option>
+                                    <option>Pesanan Khusus / Seragam Batik</option>
+                                    <option>Kemitraan & Reseller</option>
+                                    <option>Kritik & Saran</option>
+                                    <option>Media & Kerja Sama Kreatif</option>
                                 </select>
                             </div>
-                            <div class="col-12"><label class="flbl">Message *</label>
-                                <textarea class="fctrl" rows="5" placeholder="Write your message here..."></textarea>
+                            <div class="col-12"><label class="flbl">Pesan Anda *</label>
+                                <textarea class="fctrl" rows="5" placeholder="Tuliskan pesan Anda di sini..."></textarea>
                             </div>
                             <div class="col-12"><button class="btn-red" id="ctcBtn"><i
-                                        class="fas fa-paper-plane"></i>Send Message</button></div>
+                                        class="fas fa-paper-plane"></i>Kirim Pesan</button></div>
                         </div>
                         <div class="sucmsg" id="ctcOk">
                             <i class="fas fa-check-circle"></i>
-                            <p>Message sent! We'll reply within 2 hours.</p>
+                            <p>Pesan berhasil dikirim! Kami akan segera membalas dalam waktu 2 jam.</p>
                         </div>
                     </div>
                 </div>
