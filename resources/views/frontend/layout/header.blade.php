@@ -38,18 +38,44 @@
     </button>
     <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link" href="#category">Kategori</a></li>
-            <li class="nav-item"><a class="nav-link" href="#history">Sejarah</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('shop.index') }}">Koleksi</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#about">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#history">Sejarah</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#contact-section">Kontak</a></li>
+            @auth
+              <li class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}"><i class="fas fa-history me-1"></i>Pesanan Saya</a></li>
+            @endauth
         </ul>
-        <div class="d-flex align-items-center gap-1">
-            <!-- FIX 1: Search button -->
-            <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
-            <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
+        <div class="d-flex align-items-center gap-2">
+            @auth
+              {{-- Keranjang --}}
+              <a href="{{ route('cart.index') }}" class="nav-link position-relative" style="padding:6px 10px;">
+                <i class="fas fa-shopping-cart" style="font-size:1.1rem;"></i>
+                @php $cartCount = collect(session('cart', []))->sum('qty'); @endphp
+                @if($cartCount > 0)
+                  <span style="position:absolute;top:0;right:0;background:var(--primary);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;font-weight:700;">{{ $cartCount }}</span>
+                @endif
+              </a>
+              {{-- User --}}
+              <div class="dropdown">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="fas fa-user me-1"></i>{{ Str::limit(auth()->user()->name, 12) }}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="{{ route('orders.index') }}"><i class="fas fa-history me-2"></i>Pesanan Saya</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <form action="{{ route('logout') }}" method="POST">
+                      @csrf
+                      <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            @else
+              <a href="{{ route('login') }}" class="nav-link nav-cta"><i class="fas fa-sign-in-alt me-1"></i>Login</a>
+            @endauth
         </div>
     </div>
     </div>

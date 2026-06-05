@@ -1,0 +1,62 @@
+@extends('backend.layout.app')
+@section('content')
+
+<section class="section">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <div class="card-header d-flex align-items-center gap-2 bg-warning text-dark">
+          <i class="bi bi-pencil-square fs-5"></i>
+          <h5 class="mb-0">Edit Kategori</h5>
+        </div>
+        <div class="card-body">
+
+          @if($errors->any())
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <i class="bi bi-exclamation-triangle me-1"></i>
+              <strong>Perhatian!</strong>
+              <ul class="mb-0 mt-1">
+                @foreach($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+          @endif
+
+          <form action="{{ route('categories.update', $category->id) }}" method="POST">
+            @csrf
+            @method('PUT')
+
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">
+                <i class="bi bi-tag me-1 text-warning"></i>Nama Kategori
+              </label>
+              <input type="text"
+                     id="name"
+                     name="name"
+                     value="{{ old('name', $category->name) }}"
+                     class="form-control @error('name') is-invalid @enderror"
+                     placeholder="Masukkan nama kategori...">
+              @error('name')
+                <div class="invalid-feedback">{{ $message }}</div>
+              @enderror
+            </div>
+
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-warning">
+                <i class="bi bi-arrow-repeat me-1"></i> Update
+              </button>
+              <a href="{{ route('categories.index') }}" class="btn btn-secondary">
+                <i class="bi bi-arrow-left me-1"></i> Kembali
+              </a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@endsection

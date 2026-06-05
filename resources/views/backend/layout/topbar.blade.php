@@ -2,7 +2,7 @@
 
    <div class="d-flex align-items-center justify-content-between">
      <a href="index.html" class="logo d-flex align-items-center">
-       <span class="d-none d-lg-block">BeSafe</span>
+       <span class="d-none d-lg-block">Rumah Batik</span>
      </a>
      <i class="bi bi-list toggle-sidebar-btn"></i>
    </div><!-- End Logo -->
@@ -27,7 +27,7 @@
            <li>
             <a class="dropdown-item d-flex align-items-center" href="{{ route('user.edit', Auth::user()->id) }}">
                 <i class="bi bi-gear"></i>
-                <span>Account Settings kontol </span>
+                <span>Account Settings </span>
             </a>
           </li>
            <li>
