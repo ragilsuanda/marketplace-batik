@@ -23,6 +23,7 @@
          ============================================================ -->
 <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container">
+        <!-- Logo Brand -->
         <a class="navbar-brand" href="#">
             <div class="blogo">
                 <div class="bico">
@@ -31,53 +32,65 @@
                 <div class="bname">Ser<span>unai</span></div>
                 <div class="bsub">Rumah Batik</div>
             </div>
-    </div>
-    </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ route('shop.index') }}">Koleksi</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#about">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#history">Sejarah</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#contact-section">Kontak</a></li>
-            @auth
-              <li class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}"><i class="fas fa-history me-1"></i>Pesanan Saya</a></li>
-            @endauth
-        </ul>
-        <div class="d-flex align-items-center gap-2">
-            @auth
-              {{-- Keranjang --}}
-              <a href="{{ route('cart.index') }}" class="nav-link position-relative" style="padding:6px 10px;">
-                <i class="fas fa-shopping-cart" style="font-size:1.1rem;"></i>
-                @php $cartCount = collect(session('cart', []))->sum('qty'); @endphp
-                @if($cartCount > 0)
-                  <span style="position:absolute;top:0;right:0;background:var(--primary);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;font-weight:700;">{{ $cartCount }}</span>
-                @endif
-              </a>
-              {{-- User --}}
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-                  <i class="fas fa-user me-1"></i>{{ Str::limit(auth()->user()->name, 12) }}
+        </a>
+
+        <!-- Tombol Toggler Mobile -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+        </button>
+
+        <!-- Menu Navigasi Tengah -->
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('shop.index') }}">Koleksi</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#about">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#history">Sejarah</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#contact-section">Kontak</a></li>
+                @auth
+                  <li class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}"><i class="fas fa-history me-1"></i>Pesanan Saya</a></li>
+                @endauth
+            </ul>
+
+            <!-- Bagian Kanan (Aksi Pengguna & Search) -->
+            <div class="d-flex align-items-center gap-3">
+                <!-- Search Button -->
+                <button id="navSearchBtn" title="Search" class="btn btn-link text-dark p-0 border-0 me-1">
+                    <i class="fas fa-search"></i>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="{{ route('orders.index') }}"><i class="fas fa-history me-2"></i>Pesanan Saya</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li>
-                    <form action="{{ route('logout') }}" method="POST">
-                      @csrf
-                      <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
-                    </form>
-                  </li>
-                </ul>
-              </div>
-            @else
-              <a href="{{ route('login') }}" class="nav-link nav-cta"><i class="fas fa-sign-in-alt me-1"></i>Login</a>
-            @endauth
+
+                @auth
+                  {{-- Keranjang Belanja --}}
+                  <a href="{{ route('cart.index') }}" class="nav-link position-relative" style="padding:6px 10px;">
+                    <i class="fas fa-shopping-cart" style="font-size:1.1rem;"></i>
+                    @php $cartCount = collect(session('cart', []))->sum('qty'); @endphp
+                    @if($cartCount > 0)
+                      <span style="position:absolute;top:0;right:0;background:var(--primary);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;font-weight:700;">{{ $cartCount }}</span>
+                    @endif
+                  </a>
+
+                  {{-- Menu Dropdown User --}}
+                  <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                      <i class="fas fa-user me-1"></i>{{ Str::limit(auth()->user()->name, 12) }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="{{ route('orders.index') }}"><i class="fas fa-history me-2"></i>Pesanan Saya</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <form action="{{ route('logout') }}" method="POST">
+                          @csrf
+                          <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                @else
+                  {{-- Jika Belum Login --}}
+                  <a href="{{ route('login') }}" class="nav-link nav-cta"><i class="fas fa-sign-in-alt me-1"></i>Login</a>
+                @endauth
+            </div>
         </div>
-    </div>
     </div>
 </nav>
 
@@ -123,3 +136,5 @@
             <span class="ttag">Batik Kombinasi</span>
             <span class="ttag">Outer Etnik</span>
         </div>
+    </div>
+</div>
