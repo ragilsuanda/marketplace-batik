@@ -64,7 +64,7 @@ class ProductController extends Controller
             'category_id' => 'required|exists:categories,id',
             'description' => 'nullable|string',
             'price'       => 'required|numeric|min:0',
-            'stock'       => 'required|integer|min:0',
+            'restock'     => 'nullable|integer|min:0',
             'size'        => 'nullable|string|max:100',
             'image'       => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
             'image_2'     => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
@@ -76,9 +76,13 @@ class ProductController extends Controller
             'category_id' => $request->category_id,
             'description' => $request->description,
             'price'       => $request->price,
-            'stock'       => $request->stock,
             'size'        => $request->size,
         ];
+
+        // Tambah stok jika ada restock
+        if ($request->filled('restock') && (int) $request->restock > 0) {
+            $data['stock'] = $product->stock + (int) $request->restock;
+        }
 
         // Handle masing-masing foto
         foreach (['image', 'image_2', 'image_3'] as $field) {
@@ -92,8 +96,12 @@ class ProductController extends Controller
 
         $product->update($data);
 
+        $restockMsg = ($request->filled('restock') && (int) $request->restock > 0)
+            ? ' Stok bertambah ' . $request->restock . ' pcs.'
+            : '';
+
         return redirect()->route('products.index')
-            ->with('success', 'Produk berhasil diperbarui.');
+            ->with('success', 'Produk berhasil diperbarui.' . $restockMsg);
     }
 
     public function destroy(Product $product)

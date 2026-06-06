@@ -12,10 +12,8 @@
         <div class="card-body">
 
           @if($errors->any())
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <i class="bi bi-exclamation-triangle me-1"></i>
-              <strong>Perhatian!</strong>
-              <ul class="mb-0 mt-1">
+            <div class="alert alert-danger alert-dismissible fade show">
+              <ul class="mb-0">
                 @foreach($errors->all() as $error)
                   <li>{{ $error }}</li>
                 @endforeach
@@ -26,17 +24,15 @@
 
           <form action="{{ route('categories.store') }}" method="POST">
             @csrf
-
             <div class="mb-3">
-              <label for="name" class="form-label fw-semibold">
-                <i class="bi bi-tag me-1 text-primary"></i>Nama Kategori
-              </label>
+              <label for="name" class="form-label fw-semibold">Nama Kategori</label>
               <input type="text"
                      id="name"
                      name="name"
                      value="{{ old('name') }}"
                      class="form-control @error('name') is-invalid @enderror"
-                     placeholder="Masukkan nama kategori...">
+                     placeholder="Masukkan nama kategori..."
+                     autofocus>
               @error('name')
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
@@ -50,8 +46,8 @@
                 <i class="bi bi-arrow-left me-1"></i> Kembali
               </a>
             </div>
-
           </form>
+
         </div>
       </div>
     </div>
