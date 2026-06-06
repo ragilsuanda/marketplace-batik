@@ -59,7 +59,7 @@
               </div>
 
               {{-- Harga --}}
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <label class="form-label fw-semibold">
                   <i class="bi bi-cash-coin me-1 text-success"></i>Harga (Rp) <span class="text-danger">*</span>
                 </label>
@@ -72,15 +72,29 @@
                 </div>
               </div>
 
-              {{-- Stok --}}
-              <div class="col-md-4">
+              {{-- Stok saat ini (read-only) --}}
+              <div class="col-md-3">
                 <label class="form-label fw-semibold">
-                  <i class="bi bi-archive me-1 text-warning"></i>Stok <span class="text-danger">*</span>
+                  <i class="bi bi-archive me-1 text-secondary"></i>Stok Saat Ini
                 </label>
-                <input type="number" name="stock" value="{{ old('stock', $product->stock) }}"
-                       class="form-control @error('stock') is-invalid @enderror"
+                <input type="text"
+                       value="{{ $product->stock }} pcs"
+                       class="form-control bg-light text-muted fw-bold"
+                       readonly>
+                <div class="form-text">Berkurang otomatis saat checkout.</div>
+              </div>
+
+              {{-- Tambah Stok --}}
+              <div class="col-md-3">
+                <label class="form-label fw-semibold">
+                  <i class="bi bi-plus-circle me-1 text-success"></i>Tambah Stok
+                </label>
+                <input type="number" name="restock"
+                       value="{{ old('restock', 0) }}"
+                       class="form-control @error('restock') is-invalid @enderror"
                        placeholder="0" min="0">
-                @error('stock') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                @error('restock') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                <div class="form-text">Isi jika ada stok baru masuk.</div>
               </div>
 
               {{-- Ukuran --}}

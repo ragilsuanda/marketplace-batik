@@ -23,22 +23,17 @@ class CategoryController extends Controller
         return view('backend.category.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-         $request->validate([
-        'name' => 'required'
-    ]);
+        $request->validate([
+            'name' => 'required|string|max:100',
+        ]);
 
-    Category::create([
-        'name' => $request->name
-    ]);
+        Category::create(['name' => $request->name]);
 
-    return redirect()
-        ->route('categories.index')
-        ->with('success', 'Kategori berhasil ditambahkan');
+        return redirect()
+            ->route('categories.index')
+            ->with('success', 'Kategori berhasil ditambahkan.');
     }
 
     /**
